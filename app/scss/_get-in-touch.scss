@@ -1,0 +1,19 @@
+.get-in-touch-section {
+    background-image: url('../assets/get-in-touch-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50rem;
+}
+.get-in-touch {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        margin-top: 12rem;
+        margin-bottom: 3.5rem;
+        font-size: 3rem;
+        max-width: 35rem;
+    }
+}

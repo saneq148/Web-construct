@@ -1,0 +1,79 @@
+@import "libs";
+@import "vars";
+@import "promo";
+@import "header";
+@import "fonts";
+@import "our-story";
+@import "capabilities";
+@import "get-in-touch";
+@import "newsletter";
+@import "footer";
+
+.wrapper {
+    width: 100%;
+}
+html {
+    font-size: 10px;
+    color: $grey-text;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: $container-width;
+    margin: auto;
+    height: 100%;
+}
+.dark-section {
+    color: $white;
+}
+.section-header {
+    text-transform: uppercase;
+    letter-spacing: 2.31px;
+    &--underline {
+        margin-bottom: 5.5rem;
+        h1 {
+            margin: 0 auto 1rem auto;
+            font-weight: bold;
+        }
+        &::after {
+            content: "";
+            height: .2rem;
+            width: 5rem;
+            background-color: $primary;
+            display: block;
+        }
+    }
+    &--center {
+        text-align: center;
+        &::after {
+            margin: auto;
+        }
+    }
+}
+.highlited-text {
+    color: $primary;
+    letter-spacing: 0.17px;
+}
+.primary-button {
+    height: 4rem;
+    width: 15rem;
+    display: block;
+    background-color: $primary;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .2s linear;
+    &:hover {
+        background-color: transparentize($primary, .3);
+    }
+}

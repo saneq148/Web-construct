@@ -1,0 +1,35 @@
+.header {
+    height: 6.5rem;
+    border-top: 1px solid#E6E6E6;
+    border-bottom: 1px solid#E6E6E6;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        max-width: 8rem;
+        max-height: 1.8rem;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.navigation {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    li {
+        margin: 0 2rem;
+        a {
+            text-decoration: none;
+            color: $grey-text;
+            transition: color .2s ease-in-out;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

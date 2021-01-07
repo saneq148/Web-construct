@@ -1,0 +1,35 @@
+.newsletter-section {
+    background-color: $dark-bg;
+}
+.newsletter {
+    display: flex;
+    min-height: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 68.5rem;
+    margin: auto;
+    &__header {
+        font-size: 2.2rem;
+        letter-spacing: 0.85px;
+        h1 {
+            margin: 0;
+            font-size: inherit;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input[type=email] {
+            outline: none;
+            border: 1px solid $grey-border;
+            border-right: none;
+            height: 4rem;
+            min-width: 25rem;
+            padding: 1rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.07px;
+            color: $grey-text;
+        }
+    }
+}
